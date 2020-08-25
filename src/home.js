@@ -23,7 +23,7 @@ const home = () => {
   const home = document.createElement('div');
   const infoContainer = document.createElement('div');
 
-  home.classList.add('home-container', 'd-flex', 'justify-center');
+  home.classList.add('home-container', 'd-flex', 'wrap', 'justify-center');
   infoContainer.classList.add('info-container');
 
   infoContainer.appendChild(getImg());
