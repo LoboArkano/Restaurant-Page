@@ -34,7 +34,6 @@ const navTabs = () => {
 const navbar = () => {
   const nav = document.createElement('nav');
 
-  // Lodash, now imported by this script
   nav.classList.add('nav-container', 'd-flex', 'justify-between', 'align-center');
 
   nav.appendChild(brand());
