@@ -1,4 +1,7 @@
 import brandImage from './images/brand.png';
+import home from './home';
+import menu from './menu';
+import contact from './contact';
 
 const brand = () => {
   const brandDiv = document.createElement('div');
@@ -24,9 +27,24 @@ const navTabs = () => {
   tab2.innerHTML = 'menu';
   tab3.innerHTML = 'contact';
 
-  tabs.appendChild(tab1);
-  tabs.appendChild(tab2);
-  tabs.appendChild(tab3);
+  tab1.addEventListener('click', (e) => {
+    e.preventDefault();
+    home();
+  });
+
+  tab2.addEventListener('click', (e) => {
+    e.preventDefault();
+    menu();
+  });
+
+  tab3.addEventListener('click', (e) => {
+    e.preventDefault();
+    contact();
+  });
+
+  [tab1, tab2, tab3].forEach((t) => {
+    tabs.appendChild(t);
+  });
 
   return tabs;
 };

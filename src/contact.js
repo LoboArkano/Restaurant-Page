@@ -106,7 +106,8 @@ const contactList = () => {
 };
 
 const contact = () => {
-  const contact = document.createElement('div');
+  const content = document.getElementById('content');
+  const contact = document.createElement('main');
 
   contact.classList.add('contact', 'd-flex', 'wrap');
 
@@ -114,7 +115,7 @@ const contact = () => {
   contact.appendChild(schedule());
   contact.appendChild(contactList());
 
-  return contact;
+  content.replaceChild(contact, content.childNodes[1]);
 };
 
 export default contact;

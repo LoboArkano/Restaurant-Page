@@ -20,7 +20,8 @@ const info = () => {
 };
 
 const home = () => {
-  const home = document.createElement('div');
+  const content = document.getElementById('content');
+  const home = document.createElement('main');
   const infoContainer = document.createElement('div');
 
   home.classList.add('home-container', 'd-flex', 'wrap', 'justify-center');
@@ -30,7 +31,11 @@ const home = () => {
   infoContainer.appendChild(info());
   home.appendChild(infoContainer);
 
-  return home;
+  if (content.childNodes.length === 1) {
+    content.appendChild(home);
+  } else {
+    content.replaceChild(home, content.childNodes[1]);
+  }
 };
 
 export default home;

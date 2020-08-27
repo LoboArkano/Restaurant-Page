@@ -72,7 +72,8 @@ const card = (i) => {
 };
 
 const menu = () => {
-  const menuContainer = document.createElement('div');
+  const content = document.getElementById('content');
+  const menuContainer = document.createElement('main');
 
   menuContainer.classList.add('menu-container', 'd-flex', 'wrap', 'justify-between');
 
@@ -80,7 +81,7 @@ const menu = () => {
     menuContainer.appendChild(card(i));
   }
 
-  return menuContainer;
+  content.replaceChild(menuContainer, content.childNodes[1]);
 };
 
 export default menu;
