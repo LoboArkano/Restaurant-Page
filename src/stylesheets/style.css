@@ -61,6 +61,14 @@
   margin-right: 5px;
 }
 
+.main-title {
+  font-family: 'Roboto-B', Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 body {
   font-family: 'Roboto-R', Arial, Helvetica, sans-serif;
 }
@@ -100,14 +108,6 @@ body {
 
 .home-container .info-container {
   width: 70%;
-  padding-bottom: 25px;
-}
-
-.home-container .info-container .title {
-  font-family: 'Roboto-B', Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
-  text-align: center;
-  padding-top: 25px;
   padding-bottom: 25px;
 }
 
@@ -157,14 +157,15 @@ body {
 }
 
 .menu-container .card .food-info .name {
-  font-size: 1.1rem;
-  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: 'NunitoSans-B', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
 .menu-container .card .food-info .desc,
 .menu-container .card .food-info .price {
-  font-size: 1rem;
+  font-family: 'NunitoSans-R', Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
   margin-top: 15px;
 }
 

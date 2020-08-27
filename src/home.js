@@ -4,7 +4,7 @@ const getTitle = () => {
   const mainTitle = document.createElement('h1');
 
   mainTitle.innerHTML = 'Welcome to Nerium';
-  mainTitle.classList.add('title');
+  mainTitle.classList.add('main-title');
 
   return mainTitle;
 };

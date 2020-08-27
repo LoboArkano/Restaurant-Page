@@ -51,6 +51,14 @@
   margin-right: 5px;
 }
 
+.main-title {
+  font-family: 'Roboto-B', Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 body {
   font-family: 'Roboto-R', Arial, Helvetica, sans-serif;
 }
@@ -89,14 +97,6 @@ body {
   .info-container {
     width: 70%;
     padding-bottom: 25px;
-
-    .title {
-      font-family: 'Roboto-B', Arial, Helvetica, sans-serif;
-      font-size: 2.5rem;
-      text-align: center;
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
 
     .home-img {
       width: 100%;
@@ -137,14 +137,15 @@ body {
       border: 1px solid #fabc1383;
 
       .name {
-        font-size: 1.1rem;
-        font-weight: bolder;
+        font-size: 1.2rem;
+        font-family: 'NunitoSans-B', Arial, Helvetica, sans-serif;
         text-transform: uppercase;
       }
 
       .desc,
       .price {
-        font-size: 1rem;
+        font-family: 'NunitoSans-R', Arial, Helvetica, sans-serif;
+        font-size: 1.1rem;
         margin-top: 15px;
       }
     }
