@@ -1,5 +1,14 @@
 import homeImg from './images/food2.jpg';
 
+const getTitle = () => {
+  const mainTitle = document.createElement('h1');
+
+  mainTitle.innerHTML = 'Welcome to Nerium';
+  mainTitle.classList.add('title');
+
+  return mainTitle;
+};
+
 const getImg = () => {
   const myHomeImg = new Image();
   myHomeImg.src = homeImg;
@@ -12,8 +21,8 @@ const info = () => {
   const infoTxt = document.createElement('div');
 
   infoTxt.innerHTML = `
-  <p class="info">Nerium es una experiencia única que se puede comparar desde un dulce despertar, una comida agradable o una cena inolvidable acompañada de un ambiente exclusivo para ti.</p>
-  <p class="info">Nuestro espacio está pensado para que puedas disfrutar de nuestro amplio menú de la manera más relajada para que todos tus sentidos puedan captar esta experiencia.</p>
+  <p class="info">Nerium is a unique experience that can be compared to a sweet awakening, a pleasant meal or an unforgettable dinner accompanied by an exclusive atmosphere for you.</p>
+  <p class="info">Our space is designed so that you can enjoy our extensive menu in the most relaxed way so that all your senses can capture this experience.</p>
   `;
 
   return infoTxt;
@@ -27,6 +36,7 @@ const home = () => {
   home.classList.add('home-container', 'd-flex', 'wrap', 'justify-center');
   infoContainer.classList.add('info-container');
 
+  infoContainer.appendChild(getTitle());
   infoContainer.appendChild(getImg());
   infoContainer.appendChild(info());
   home.appendChild(infoContainer);
