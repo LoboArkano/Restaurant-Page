@@ -1,0 +1,193 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto-B';
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-R';
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'NunitoSans-B';
+  src: url("../fonts/NunitoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'NunitoSans-R';
+  src: url("../fonts/NunitoSans-Regular.ttf");
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.icon {
+  height: 18px;
+  margin-right: 5px;
+}
+
+.main-title {
+  font-family: 'Roboto-B', Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+body {
+  font-family: 'Roboto-R', Arial, Helvetica, sans-serif;
+}
+
+.nav-container {
+  width: 100%;
+  height: 85px;
+  background-color: #111;
+  padding: 0 2%;
+}
+
+.nav-container .brand {
+  width: 100px;
+  height: 100%;
+}
+
+.nav-container .brand .brand-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.nav-container .tab-container {
+  width: 25%;
+  margin-right: 5%;
+  color: white;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: 'NunitoSans-B', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.home-container {
+  width: 100%;
+}
+
+.home-container .info-container {
+  width: 70%;
+  padding-bottom: 25px;
+}
+
+.home-container .info-container .home-img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding-bottom: 30px;
+}
+
+.home-container .info-container .info {
+  font-size: 1.3rem;
+  padding: 15px 1% 0;
+}
+
+.menu-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu-container .card {
+  width: 28%;
+  height: max-content;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 35px;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+.menu-container .card .food-img {
+  width: 100%;
+  height: 215px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
+}
+
+.menu-container .card .food-info {
+  padding: 15px 18px;
+  width: 100%;
+  border: 1px solid #fabc1383;
+}
+
+.menu-container .card .food-info .name {
+  font-size: 1.2rem;
+  font-family: 'NunitoSans-B', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.menu-container .card .food-info .desc,
+.menu-container .card .food-info .price {
+  font-family: 'NunitoSans-R', Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 30px auto;
+}
+
+.contact .schedule,
+.contact .contact-info {
+  margin-top: 45px;
+}
+
+.contact .schedule .title,
+.contact .contact-info .title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.contact .item {
+  padding-top: 10px;
+}
