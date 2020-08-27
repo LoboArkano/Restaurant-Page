@@ -3,8 +3,10 @@ import './stylesheets/style.css';
 import navbar from './navbar';
 import home from './home';
 import menu from './menu';
+import contact from './contact';
 
 const content = document.getElementById('content');
 content.appendChild(navbar());
 content.appendChild(home());
 content.appendChild(menu());
+content.appendChild(contact());

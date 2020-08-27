@@ -22,6 +22,15 @@
   align-items: center;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.icon {
+  height: 18px;
+  margin-right: 5px;
+}
+
 .nav-container {
   width: 100%;
   height: 85px;
@@ -91,7 +100,7 @@
     .food-info {
       padding: 15px 18px;
       width: 100%;
-      border: 1px solid #fabd13;
+      border: 1px solid #fabc1383;
 
       .name {
         font-size: 1.1rem;
@@ -105,5 +114,26 @@
         margin-top: 15px;
       }
     }
+  }
+}
+
+.contact {
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 30px auto;
+
+  .schedule,
+  .contact-info {
+    margin-top: 45px;
+
+    .title {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+  }
+
+  .item {
+    padding-top: 10px;
   }
 }

@@ -32,6 +32,15 @@
           align-items: center;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.icon {
+  height: 18px;
+  margin-right: 5px;
+}
+
 .nav-container {
   width: 100%;
   height: 85px;
@@ -110,7 +119,7 @@
 .menu-container .card .food-info {
   padding: 15px 18px;
   width: 100%;
-  border: 1px solid #fabd13;
+  border: 1px solid #fabc1383;
 }
 
 .menu-container .card .food-info .name {
@@ -123,5 +132,30 @@
 .menu-container .card .food-info .price {
   font-size: 1rem;
   margin-top: 15px;
+}
+
+.contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 30px auto;
+}
+
+.contact .schedule,
+.contact .contact-info {
+  margin-top: 45px;
+}
+
+.contact .schedule .title,
+.contact .contact-info .title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.contact .item {
+  padding-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
