@@ -3,6 +3,15 @@ import mail from './images/mail.png';
 import facebook from './images/facebook.png';
 import instagram from './images/instagram-sketched.png';
 
+const getTitle = () => {
+  const mainTitle = document.createElement('h1');
+
+  mainTitle.innerHTML = 'Come Visit Us';
+  mainTitle.classList.add('main-title', 'w-100');
+
+  return mainTitle;
+};
+
 const getMap = () => {
   const ifrm = document.createElement('iframe');
 
@@ -13,7 +22,7 @@ const getMap = () => {
   return ifrm;
 };
 
-const getTitle = (title) => {
+const getSTitle = (title) => {
   const t = document.createElement('p');
 
   t.innerHTML = title;
@@ -48,7 +57,7 @@ const schedule = () => {
 
   schedule.classList.add('schedule');
 
-  schedule.appendChild(getTitle('Schedule'));
+  schedule.appendChild(getSTitle('Schedule'));
   schedule.appendChild(scheduleList());
 
   return schedule;
@@ -94,7 +103,7 @@ const contactList = () => {
 
   contactList.classList.add('contact-info');
 
-  contactList.appendChild(getTitle('Contact Info'));
+  contactList.appendChild(getSTitle('Contact Info'));
   for (let i = 0; i < 2; i += 1) {
     contactList.appendChild(contactInfo('text', i));
   }
@@ -111,6 +120,7 @@ const contact = () => {
 
   contact.classList.add('contact', 'd-flex', 'wrap');
 
+  contact.appendChild(getTitle());
   contact.appendChild(getMap());
   contact.appendChild(schedule());
   contact.appendChild(contactList());
