@@ -1,6 +1,6 @@
 # Restaurant-Page
 
-> This project contains a web page about the Nerium Restaurant. Is build it with webpack.
+> This project contains a web page of the Nerium Restaurant. Is built with javascript and webpack.
 
 ## Screenshots
 
@@ -9,6 +9,10 @@
 ![image](https://user-images.githubusercontent.com/33432289/91497435-a5e79980-e883-11ea-923c-5bcc9e434905.png)
 
 ![image](https://user-images.githubusercontent.com/33432289/91497488-c0ba0e00-e883-11ea-9775-fe547321aa1a.png)
+
+## Live Demo
+
+[Live version](https://restaurant-page-roberto.netlify.app/)
 
 ## Built With
 
@@ -20,10 +24,11 @@
 
 - Webpack
 
-## Live Demo
+## Future Features
 
-[Live version](https://restaurant-page-roberto.netlify.app/)
+- Add footer section
 
+- Add responsive design
 
 ## Getting Started
 
